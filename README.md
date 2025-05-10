@@ -20,4 +20,28 @@ Create a CSS animation.
 Store data in localStorage.
 Apply JavaScript to trigger animations.
 
-Happy Coding! 💻✨
+# Sparkling Properties
+
+## Overview
+Sparkling Properties is a web application designed to showcase luxurious accommodations and experiences in a beautiful natural setting. Users can explore various lodging options, learn about the amenities, and submit inquiries for bookings.
+
+## Features
+- **Responsive Design**: The application is mobile-friendly and adjusts to different screen sizes.
+- **Interactive Slideshow**: Showcases images of the property and its amenities.
+- **User Reviews**: Display guest feedback to help potential customers make informed decisions.
+- **Enquiry Form**: Allows users to submit inquiries for bookings directly through the website.
+
+## Technologies Used
+- HTML5
+- CSS3
+- JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) (for utility-first styling)
+- [Font Awesome](https://fontawesome.com/) (for icons)
+
+## Installation
+
+To set up the project locally, follow these steps:
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yourusername/sparkling-properties.git

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sparkling Properties</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-inter">
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto">
+            <ul class="flex space-x-4 justify-center">
+                <li><a href="#" class="hover:text-indigo-400">Home</a></li>
+                <li><a href="#about" class="hover:text-indigo-400">About Us</a></li>
+                <li><a href="#accommodation" class="hover:text-indigo-400">Accommodation</a></li>
+                <li><a href="#enquire" class="hover:text-indigo-400">Enquire</a></li>
+                <li><a href="#reviews" class="hover:text-indigo-400">Reviews</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Header Section -->
+    <header class="bg-cover bg-center bg-no-repeat py-16" style="background-image: url('https://images.unsplash.com/photo-1501785888022-98a1541983ad');">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-semibold text-white tracking-wide shadow-lg" style="color: #f5f5f5;">Welcome to Sparkling Properties</h1>
+            <p class="text-lg text-gray-200 mt-4 shadow-md">Your Luxurious Escape in the Heart of Nature</p>
+            <a href="#enquire" class="mt-8 px-6 py-3 bg-indigo-500 hover:bg-indigo-600 text-white font-semibold rounded-full transition duration-300 ease-in-out shadow-md">Enquire Now</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="container mx-auto py-12 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4">About Us</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Sparkling Properties offers an unparalleled experience, blending luxury accommodation with the beauty of the African wilderness. Our lodge is designed to provide comfort and tranquility, making it the perfect destination for relaxation and adventure. We are committed to providing exceptional service and creating unforgettable memories for our guests.
+                </p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1607712617949-8c993d290809" alt="Lodge Interior" class="rounded-lg shadow-lg w-full" />
+            </div>
+            <div class="slideshow-container">
+                <button id="animateButton" class="sticker-button">🐻 Slide Show</button>
+                <div class="slideshow">
+                    <div class="slides fade">
+                        <img src="animals.avif" alt="Animals" class="slide-img">
+                    </div>
+                    <div class="slides fade">
+                        <img src="pool.avif" alt="Pool" class="slide-img">
+                    </div>
+                    <div class="slides fade">
+                        <img src="trees.avif" alt="Trees" class="slide-img">
+                    </div>
+                    <div class="slides fade">
+                        <img src="VIEWS.webp" alt="Trees" class="slide-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accommodation Section -->
+    <section class="bg-gray-50 py-12 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-8 text-center">Our Accommodation</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://media.istockphoto.com/id/1051514762/photo/modern-chalet-interior.jpg?s=1024x1024&w=is&k=20&c=aA0Gte7Yt_YJINQk3Ko3SPngxz7fN5RJrqOiWyh9YnY=" alt="Luxury Suite" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Luxury Suite</h3>
+                        <p class="text-gray-600 mb-4">Spacious suite with king-size bed and stunning views.</p>
+                        <p class="text-gray-700 font-semibold">From $200/night</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://media.istockphoto.com/id/1351889325/photo/cozy-lake-house-living-room-with-lake-view-in-evening.jpg?s=1024x1024&w=is&k=20&c=HjniFbwyHo4JPrNgAL-WpngauNwJhKXRZvL9wmJzkXE=" alt="Cozy Cabin" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Cozy Cabin</h3>
+                        <p class="text-gray-600 mb-4">Private cabin with fireplace and scenic surroundings.</p>
+                        <p class="text-gray-700 font-semibold">From $150/night</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://media.istockphoto.com/id/1439794018/photo/luxury-resort-surrounded-by-trees.jpg?s=612x612&w=0&k=20&c=Qc3jBH4gHGkJo7VG_do_LjBhk4V_JloIY03xNX6hH6k=" alt="Private Villa" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Private Villa</h3>
+                        <p class="text-gray-600 mb-4">Exclusive villa with private pool and garden.</p>
+                        <p class="text-gray-700 font-semibold">From $300/night</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Reserve & Spa Section -->
+    <section class="container mx-auto py-12 px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4">Game Reserve & Spa</h2>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Experience the thrill of encountering wildlife in our partnered game reserve. Our experienced guides will take you on unforgettable safaris.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    After a day of adventure, unwind at our luxurious spa. Indulge in a variety of treatments designed to rejuvenate your body and mind.
+                </p>
+                <div class="grid grid-cols-2 gap-4">
+                    <img src="https://media.istockphoto.com/id/1128748845/photo/group-of-african-elephants-in-the-wild.webp?a=1&b=1&s=612x612&w=0&k=20&c=dIsLyKJxl_xtn9F6DNG-mRLXXgq5zVOJN1K2pf8oqK4=" alt="Game Reserve" class="rounded-lg shadow-md" />
+                    <img src="https://media.istockphoto.com/id/1176488285/photo/beautiful-woman-relaxing-with-back-massage.webp?a=1&b=1&s=612x612&w=0&k=20&c=gJ8KPUJ9zeJqGuEUvCIdEBurjzXakXbEkToFCJmzW-Q=" alt="Spa" class="rounded-lg shadow-md" />
+                </div>
+            </div>
+            <div>
+                <img src="https://media.istockphoto.com/id/1272952074/photo/people-safari-africa-elephant-wildlife-nature-savanna-open-vehicle-close-animal-encounter.webp?a=1&b=1&s=612x612&w=0&k=20&c=auBeAWAr294CzgwTMkzVri-3xp0ER0KRodVZS1SCoXM=" alt="Game Drive" class="rounded-lg shadow-lg w-full" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Guest Reviews Section -->
+    <section class="bg-gray-50 py-12 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-8 text-center">Guest Reviews</h2>
+            <div id="review-container">
+                <!-- Reviews will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Enquiry Section -->
+    <section id="enquire" class="container mx-auto py-12 px-4">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-8 text-center">Enquire Now</h2>
+        <div class="bg-white rounded-lg shadow-md p-8">
+            <form id="enquiry-form" class="space-y-6">
+                <div>
+                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">Name:</label>
+                    <input type="text" id="name" name="name" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required />
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" required />    
+                    <span id="error-message" style="color:red; display:none;"></span>
+                </div>
+                <div>
+                    <label for="check-in" class="block text-gray-700 text-sm font-bold mb-2">Check-in Date:</label>
+                    <input type="date" id="check-in" name="check-in" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required />
+                </div>
+                <div>
+                    <label for="check-out" class="block text-gray-700 text-sm font-bold mb-2">Check-out Date:</label>
+                    <input type="date" id="check-out" name="check-out" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required />
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-700 text-sm font-bold mb-2">Message:</label>
+                    <textarea id="message" name="message" class="shadow appearance-none border rounded w-full py-3 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32 resize-y" required></textarea>
+                </div>
+                <button type="submit" class="bg-indigo-500 hover:bg-indigo-600 text-white font-semibold rounded-full py-3 px-6 transition duration-300 ease-in-out focus:outline-none focus:shadow-outline">Submit Enquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Sparkling Properties. All rights reserved. | Email: xakaniniwe@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
